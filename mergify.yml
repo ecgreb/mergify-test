@@ -1,7 +1,0 @@
-  - name: Test
-    conditions:
-      - "body~=(?mi)^- \\[X\\] Tested \"Don't keep activities\""
-      - "body~=(?mi)^- \\[X\\] Tested offline mode"
-    actions:
-        queue:
-            name: default
