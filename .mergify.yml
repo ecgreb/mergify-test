@@ -1,0 +1,8 @@
+pull_request_rules:
+  - name: Automatic merge on approval
+    conditions:
+      - "body~=(?mi)^- \\[X\\] Tested \"Don't keep activities\""
+      - "body~=(?mi)^- \\[X\\] Tested offline mode"
+    actions:
+      merge:
+        method: merge
